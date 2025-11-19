@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from 'react';
 import {
   View,
@@ -116,3 +117,19 @@ const styles = StyleSheet.create({
     color: '#000',
   },
 });
+=======
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const SettingScreen = () => {
+  return (
+    <View>
+      <Text>SettingScreen</Text>
+    </View>
+  )
+}
+
+export default SettingScreen
+
+const styles = StyleSheet.create({})
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2

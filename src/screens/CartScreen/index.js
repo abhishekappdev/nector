@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // src/screens/CartScreen/index.js
 import React from 'react';
 import { View, Text, FlatList, Image, StyleSheet } from 'react-native';
@@ -105,3 +106,19 @@ const styles = StyleSheet.create({
 });
 
 export default CartScreen;
+=======
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const CartScreen = () => {
+  return (
+    <View>
+      <Text>CartScreen</Text>
+    </View>
+  )
+}
+
+export default CartScreen
+
+const styles = StyleSheet.create({})
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2

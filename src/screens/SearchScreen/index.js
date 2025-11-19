@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // import { StyleSheet, Text, View } from 'react-native'
 // import React from 'react'
 
@@ -246,3 +247,19 @@ const styles = StyleSheet.create({
     marginLeft: 4,
   },
 });
+=======
+import { StyleSheet, Text, View } from 'react-native'
+import React from 'react'
+
+const SearchScreen = () => {
+  return (
+    <View>
+      <Text>SearchScreen</Text>
+    </View>
+  )
+}
+
+export default SearchScreen
+
+const styles = StyleSheet.create({})
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2

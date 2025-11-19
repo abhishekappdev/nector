@@ -1,7 +1,10 @@
 import {
   Image,
   Linking,
+<<<<<<< HEAD
   Modal,
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
   StyleSheet,
   Text,
   TextInput,
@@ -17,8 +20,11 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 
 const SignUpScreen = () => {
   const navigation = useNavigation();
+<<<<<<< HEAD
   const [modalVisible, setModalVisible] = useState(false);
 
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
   const [passwordVisible, setPasswordVisible] = useState(false);
   return (
     <View>
@@ -77,11 +83,18 @@ const SignUpScreen = () => {
         <TouchableOpacity
           style={{
             paddingTop: 52,
+<<<<<<< HEAD
             alignItems: 'center',
             // paddingLeft: 20,
             // paddingRight: 29,
           }}
           onPress={() => setModalVisible(true)}
+=======
+            alignItems:'center'
+            // paddingLeft: 20,
+            // paddingRight: 29,
+          }}
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
         >
           <View
             style={{
@@ -181,7 +194,11 @@ const SignUpScreen = () => {
             <FontAwesome name="apple" size={35} color="black" />
           </View>
         </View>
+<<<<<<< HEAD
         <Text style={{ fontSize: 17, textAlign: 'center', paddingTop: 28 }}>
+=======
+        <Text style={{ fontSize: 17,textAlign:'center', paddingTop: 28 }}>
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
           I Already Have an Account{'  '}
           <Text
             style={{ color: '#f83757c1', fontWeight: 'bold' }}
@@ -191,6 +208,7 @@ const SignUpScreen = () => {
           </Text>
         </Text>
       </View>
+<<<<<<< HEAD
 
       <Modal
         transparent
@@ -240,6 +258,8 @@ const SignUpScreen = () => {
           </View>
         </View>
       </Modal>
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
     </View>
   );
 };
@@ -259,6 +279,7 @@ const styles = StyleSheet.create({
     flex: 1,
     paddingVertical: 12,
   },
+<<<<<<< HEAD
   modalOverlay: {
     flex: 1,
     backgroundColor: 'rgba(0,0,0,0.5)',
@@ -290,4 +311,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     gap:10
   },
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
 });

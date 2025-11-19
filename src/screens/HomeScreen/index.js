@@ -15,6 +15,7 @@ import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import Entypo from 'react-native-vector-icons/Entypo';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import FontAwesome from 'react-native-vector-icons/FontAwesome';
+<<<<<<< HEAD
 import { ImageSlider } from 'react-native-image-slider-banner';
 import EvilIcons from 'react-native-vector-icons/EvilIcons';
 import { useNavigation } from '@react-navigation/native';
@@ -22,6 +23,11 @@ import { useNavigation } from '@react-navigation/native';
 
 const HomeScreen = () => {
   const navigation = useNavigation();
+=======
+import { ImageSlider } from "react-native-image-slider-banner";
+
+const HomeScreen = () => {
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
   const [remainingTime, setRemainingTime] = useState(
     23 * 60 * 60 + 55 * 60 + 20,
   );
@@ -51,6 +57,7 @@ const HomeScreen = () => {
   const products = [
     {
       id: '1',
+<<<<<<< HEAD
       image: require('../../assets/images/unsplash.png'),
       name: 'NIke Sneakers',
       description: 'Mid Peach Mocha Shoes For Man White Black Pink S...',
@@ -62,6 +69,8 @@ const HomeScreen = () => {
     },
     {
       id: '2',
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       image: require('../../assets/images/image1.png'),
       name: 'TITAN Men Watch-1806N',
       description:
@@ -73,7 +82,11 @@ const HomeScreen = () => {
       reviews: 56890,
     },
     {
+<<<<<<< HEAD
       id: '3',
+=======
+      id: '2',
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       image: require('../../assets/images/image2.png'),
       name: 'HRX by Hrithik Roshan',
       description: 'Neque porro quisquam est qui dolorem ipsum quia',
@@ -84,7 +97,11 @@ const HomeScreen = () => {
       reviews: 344657,
     },
     {
+<<<<<<< HEAD
       id: '4',
+=======
+      id: '3',
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       image: require('../../assets/images/image3.png'),
       name: 'Philips BHH880/10',
       description:
@@ -96,7 +113,11 @@ const HomeScreen = () => {
       reviews: 646776,
     },
     {
+<<<<<<< HEAD
       id: '5',
+=======
+      id: '4',
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       image: require('../../assets/images/image4.png'),
       name: 'Women Printed Kurta',
       description: 'Neque porro quisquam est qui dolorem ipsum quia',
@@ -107,6 +128,7 @@ const HomeScreen = () => {
       reviews: 15007,
     },
   ];
+<<<<<<< HEAD
   const products2 = [
     {
       id: '1',
@@ -153,6 +175,11 @@ const HomeScreen = () => {
   const ProductCard = ({ item }) => {
     return (
       <TouchableOpacity
+=======
+  const ProductCard = ({ item }) => {
+    return (
+      <View
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
         style={{
           backgroundColor: '#fff',
           borderRadius: 12,
@@ -165,9 +192,12 @@ const HomeScreen = () => {
           shadowRadius: 6,
           elevation: 4,
         }}
+<<<<<<< HEAD
         onPress={() => navigation.navigate('ProductDetail', { product: item })}
 // onPress={() => navigation.navigate('ProductDetail', { id: item.id, preview: item })}
 
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       >
         <Image
           source={item.image}
@@ -222,7 +252,11 @@ const HomeScreen = () => {
             </Text>
           </View>
         </View>
+<<<<<<< HEAD
       </TouchableOpacity>
+=======
+      </View>
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
     );
   };
 
@@ -248,9 +282,13 @@ const HomeScreen = () => {
             resizeMode: 'contain',
           }}
         />
+<<<<<<< HEAD
         <TouchableOpacity onPress={() => navigation.navigate('Profile')}>
           <MaterialIcons name="account-circle" size={34} color="#000" />
         </TouchableOpacity>
+=======
+        <MaterialIcons name="account-circle" size={34} color="#000" />
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       </View>
       <ScrollView style={{ flex: 1 }} showsVerticalScrollIndicator={false}>
         <View style={{ paddingLeft: 19, paddingRight: 32, paddingTop: 10 }}>
@@ -293,6 +331,34 @@ const HomeScreen = () => {
           </Text>
         </View>
 
+<<<<<<< HEAD
+=======
+        {/* Image Slider Banner */}
+        <View >
+          <ImageSlider 
+            data={[
+              {img: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5a5uCP-n4teeW2SApcIqUrcQApev8ZVCJkA&usqp=CAU'},
+              {img: 'https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg'},
+              {img: 'https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg'}
+            ]}
+            autoPlay={true}
+            timer={3000}
+            onItemChanged={(item) => console.log("item", item)}
+            closeIconColor="#fff"
+            caroselImageStyle={{ 
+              borderRadius: 12,
+              height: 220,
+              marginTop:20,
+              borderRadius:15
+            }}
+            indicatorContainerStyle={{
+              position: 'absolute',
+              bottom: 10
+            }}
+          />
+        </View>
+
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
         <ScrollView
           horizontal
           showsHorizontalScrollIndicator={false}
@@ -316,6 +382,7 @@ const HomeScreen = () => {
           </View>
         </ScrollView>
 
+<<<<<<< HEAD
         <View style={{ padding: 10 }}>
           <ImageSlider
             data={[
@@ -337,6 +404,9 @@ const HomeScreen = () => {
         </View>
 
         <View style={{ paddingTop: 15, alignItems: 'center' }}>
+=======
+        <View style={{ paddingTop: 47, alignItems: 'center' }}>
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
           <View
             style={{
               backgroundColor: '#3A8DFF',
@@ -348,6 +418,10 @@ const HomeScreen = () => {
               justifyContent: 'space-between',
             }}
           >
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
             <View>
               <Text style={{ color: '#fff', fontSize: 16, fontWeight: '600' }}>
                 Deal of the Day
@@ -366,6 +440,10 @@ const HomeScreen = () => {
               </View>
             </View>
 
+<<<<<<< HEAD
+=======
+      
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
             <TouchableOpacity
               style={{
                 backgroundColor: '#fff',
@@ -409,17 +487,28 @@ const HomeScreen = () => {
                 width: 10,
               }}
             />
+<<<<<<< HEAD
 
+=======
+            
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
             <ImageBackground
               source={require('../../assets/images/Group.png')}
               style={styles.decorBackground}
             >
+<<<<<<< HEAD
               <View style={{ paddingLeft: 90 }}>
                 <Image
                   source={require('../../assets/images/Rectangle3.png')}
                   style={styles.shoeImage}
                 />
               </View>
+=======
+              <Image
+                source={require('../../assets/images/Rectangle3.png')}
+                style={styles.shoeImage}
+              />
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
             </ImageBackground>
           </View>
 
@@ -432,6 +521,7 @@ const HomeScreen = () => {
             </TouchableOpacity>
           </View>
         </View>
+<<<<<<< HEAD
         <View style={{ paddingTop: 15, alignItems: 'center' }}>
           <View
             style={{
@@ -575,6 +665,8 @@ const HomeScreen = () => {
             up to 50% Off
           </Text>
         </View>
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
       </ScrollView>
     </View>
   );
@@ -583,14 +675,22 @@ const HomeScreen = () => {
 export default HomeScreen;
 
 const styles = StyleSheet.create({
+<<<<<<< HEAD
   card: {
+=======
+   card: {
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
     flexDirection: 'row',
     backgroundColor: '#fff',
     borderRadius: 12,
     width: 343,
     height: 172,
+<<<<<<< HEAD
     justifyContent: 'center',
     alignSelf: 'center',
+=======
+    alignItems: 'center',
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
     shadowColor: '#000',
     shadowOpacity: 0.1,
     shadowOffset: { width: 0, height: 2 },
@@ -599,6 +699,7 @@ const styles = StyleSheet.create({
   },
 
   leftSection: {
+<<<<<<< HEAD
     flexDirection: 'row',
     alignItems: 'center',
     paddingLeft: 16,
@@ -610,6 +711,19 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     // marginLeft: 6,
+=======
+    flexDirection: 'row', 
+    alignItems: 'center',
+    paddingLeft: 10, 
+  },
+
+  decorBackground: {
+    width: 90, 
+    height: 150, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginLeft: 6,
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
   },
 
   shoeImage: {
@@ -622,7 +736,10 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     paddingHorizontal: 12,
+<<<<<<< HEAD
     paddingLeft: 80,
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
   },
 
   title: {
@@ -649,6 +766,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     fontWeight: '600',
   },
+<<<<<<< HEAD
   banner: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -689,4 +807,6 @@ const styles = StyleSheet.create({
     width: 120,
     height: 120,
   },
+=======
+>>>>>>> 6773307e0a63deadc5495da486e27fa9adf735f2
 });
